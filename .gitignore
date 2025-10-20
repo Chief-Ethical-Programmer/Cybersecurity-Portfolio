@@ -1,0 +1,112 @@
+# =========================
+#  Cybersecurity Projects .gitignore
+# =========================
+
+# ---- OS / Editor Junk ----
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+env/
+venv/
+ENV/
+.venv/
+.Python
+
+# ---- Docker ----
+# Ignore runtime / generated files
+.docker/
+docker-compose.override.yml
+*.pid
+*.log
+.env
+
+# ---- Logs / Temp / Cache ----
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.out
+.cache/
+tmp/
+backup/
+
+# ---- IDEs and Editors ----
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ---- Binaries / Compiled ----
+*.exe
+*.dll
+*.so
+*.o
+*.out
+*.class
+*.jar
+*.bin
+*.db
+*.sqlite
+*.sqlite3
+
+# ---- Archives ----
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ---- Docs / Reports ----
+# Keep only sanitized versions manually
+*.pdf
+*.docx
+*.pptx
+*.xls
+*.xlsx
+
+# ---- Images / Media ----
+# You can remove this section if you want to commit screenshots
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mov
+
+# ---- Credentials / Keys ----
+*.env
+*.key
+*.pem
+*.crt
+*.csr
+*.der
+*.asc
+secrets.txt
+credentials.txt
+passwords.txt
+
+# ---- Virtual Machines / ISOs ----
+*.vmdk
+*.vmx
+*.iso
+*.ovf
+*.ova
+*.qcow2
+
+# ---- Jupyter Notebooks ----
+.ipynb_checkpoints/
+
+# ---- Node / JS (optional future use) ----
+node_modules/
+npm-debug.log
+yarn-error.log
