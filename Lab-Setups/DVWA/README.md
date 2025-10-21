@@ -5,4 +5,40 @@
 - The setup is simple to create, safe and in a controlled environment where I can experiment, break things, and learn how web attacks actually work, without risking any real systems.
 - This project walks through the process of running DVWA locally using Docker containers, making it quick to deploy and easy to reset if something breaks.
 
+---
+# Setup
+# Clone the repo
+```
+gitclone https://github.com/Chief-Ethical-Programmer/Cybersecurity-Portfolio/tree/900184747221cad8c76f61de44510f491714aab5/Lab-Setups/DVWA
+```
+## create folder and save compose file (if you haven't already)
+```
+mkdir -p ~/lab-setups/DVWA
+cd ~/lab-setups/DVWA
+```
+## (create docker-compose.yml here using your editor)
 
+## Start the lab (use sudo)
+```
+sudo docker compose up -d
+```
+## Check containers
+```
+sudo docker compose ps
+```
+## Follow logs if needed
+```
+sudo docker compose logs -f dvwa dvwa-db
+```
+## Open DVWA in browser:
+# http://localhost:8081
+# Default login: admin / password
+
+# To stop the lab
+```
+sudo docker compose down
+```
+# To remove volumes and reset DB (destructive)
+```
+sudo docker compose down --volumes
+```
