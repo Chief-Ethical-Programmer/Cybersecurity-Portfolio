@@ -26,7 +26,7 @@ You should see this if the docker container is running perfectly.
 ![](SC1.png)
 ## Check containers
 ```
-sudo docker compose ps 
+sudo docker ps 
 ```
 You should see this if the installation is success
 
@@ -48,6 +48,7 @@ sudo docker compose down --volumes
 ```
 
 ---
+
 
 
 
