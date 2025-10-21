@@ -11,13 +11,6 @@
 ```
 gitclone https://github.com/Chief-Ethical-Programmer/Cybersecurity-Portfolio/tree/900184747221cad8c76f61de44510f491714aab5/Lab-Setups/DVWA
 ```
-## create folder and save compose file (if you haven't already)
-```
-mkdir -p ~/lab-setups/DVWA
-cd ~/lab-setups/DVWA
-```
-## (create docker-compose.yml here using your editor)
-
 ## Start the lab (use sudo)
 ```
 sudo docker compose up -d
@@ -31,7 +24,7 @@ sudo docker compose ps
 sudo docker compose logs -f dvwa dvwa-db
 ```
 ## Open DVWA in browser:
-# http://localhost:8081
+- http://localhost:8081
 # Default login: admin / password
 
 # To stop the lab
@@ -42,3 +35,5 @@ sudo docker compose down
 ```
 sudo docker compose down --volumes
 ```
+
+---
