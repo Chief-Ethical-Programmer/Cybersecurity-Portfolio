@@ -32,9 +32,9 @@ You should see all the running containers.
 
 ![Screenshot](SC.png)
 
-## Open DVWA in browser:
+## Open DVWA in browser
 - http://localhost:8081
- ### Default login: 
+ ### Default login 
  - Username - admin
  - Password - password
   
@@ -53,6 +53,7 @@ sudo docker compose down
 sudo docker compose down --volumes
 ```
 ---
+
 
 
 
