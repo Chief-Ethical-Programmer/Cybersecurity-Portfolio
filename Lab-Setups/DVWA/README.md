@@ -34,9 +34,11 @@ You should see all the running containers.
 
 ## Open DVWA in browser:
 - http://localhost:8081
+![](S3.png)
 ## Default login: 
 - Username - admin
 - Password -password
+![](S4.png)
   
 ## To stop the lab
 ```
@@ -47,6 +49,7 @@ sudo docker compose down
 sudo docker compose down --volumes
 ```
 ---
+
 
 
 
