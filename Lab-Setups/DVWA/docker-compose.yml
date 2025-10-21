@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  dvwa-db:
+    image: mariadb:10.6
+    environment:
+      MYSQL_ROOT_PASSWORD: rootroot
+      MYSQL_DATABASE: dvwa
+      MYSQL_USER: dvwa
+      MYSQL_PASSWORD: dvwa
+    volumes:
+      - dvwa_db_data:/var/lib/mysql
+
+  dvwa:
+    image: vulnerables/web-dvwa:latest
+    depends_on:
+      - dvwa-db
+    environment:
+      MYSQL_HOST: dvwa-db
+      MYSQL_USER: dvwa
+      MYSQL_PASSWORD: dvwa
+      MYSQL_DB: dvwa
+    ports:
+      - "8081:80"
+
+volumes:
+  dvwa_db_data:
