@@ -7,10 +7,13 @@
 
 ---
 # Setup
-# Clone the repo
+## Installing Docker on Kali--  
 ```
-gitclone https://github.com/Chief-Ethical-Programmer/Cybersecurity-Portfolio/tree/900184747221cad8c76f61de44510f491714aab5/Lab-Setups/DVWA
+sudo apt update && sudo apt upgrade -y     <!-- Update to the latest packages -->
+sudo apt install -y docker.io docker-compose  <!-- To install the docker engine and docker compose on the main system -->
 ```
+## Download the docker-compose.yml 
+
 ## Start the lab (use sudo)
 ```
 sudo docker compose up -d
@@ -37,3 +40,4 @@ sudo docker compose down --volumes
 ```
 
 ---
+
