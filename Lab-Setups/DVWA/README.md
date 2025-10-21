@@ -27,6 +27,7 @@ sudo docker compose ps
 ```
 
 You should see this if the installation is success
+[!Screenshot](https://github.com/Chief-Ethical-Programmer/Cybersecurity-Portfolio/blob/main/Lab-Setups/DVWA/SC.png)
 
 ## Open DVWA in browser:
 - http://localhost:8081
@@ -42,5 +43,6 @@ sudo docker compose down --volumes
 ```
 
 ---
+
 
 
