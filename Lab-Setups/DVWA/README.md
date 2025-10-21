@@ -34,20 +34,20 @@ You should see all the running containers.
 
 ## Open DVWA in browser:
 - http://localhost:8081
-# Default login: 
+## Default login: 
 - Username - admin
 - Password -password
-
-# To stop the lab
+  
+## To stop the lab
 ```
 sudo docker compose down
 ```
-# To remove volumes and reset DB (destructive)
+## To remove volumes and reset DB (destructive)
 ```
 sudo docker compose down --volumes
 ```
-
 ---
+
 
 
 
