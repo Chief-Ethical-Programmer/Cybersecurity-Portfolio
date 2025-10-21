@@ -34,10 +34,14 @@ You should see all the running containers.
 
 ## Open DVWA in browser:
 - http://localhost:8081
+ ### Default login: 
+ - Username - admin
+ - Password -password
+  
 ![](S3.png)
-## Default login: 
-- Username - admin
-- Password -password
+
+## Waala!!🙌 the website is ready to be hack
+
 ![](S4.png)
   
 ## To stop the lab
@@ -49,6 +53,7 @@ sudo docker compose down
 sudo docker compose down --volumes
 ```
 ---
+
 
 
 
