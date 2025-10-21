@@ -31,7 +31,7 @@ sudo docker ps
 ```
 You should see all the running containers.
 
-![Screenshot](SC.png)
+![Screenshot](images/SC.png)
 
 ## Open DVWA in browser
 - http://localhost:8081
@@ -39,11 +39,11 @@ You should see all the running containers.
  - Username - admin
  - Password - password
   
-![](S3.png)
+![](images/S3.png)
 
 ## Waala!!🙌 the website is ready to be hack
 
-![](S4.png)
+![](images/S4.png)
   
 ## To stop the lab
 ```
@@ -61,6 +61,7 @@ sudo docker compose down --volumes
 - This repository only documents my local setup process for educational purposes only.
 
 ---
+
 
 
 
