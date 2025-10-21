@@ -1,5 +1,6 @@
 # DVWA Setup
 - This project documents how I set up the Damn Vulnerable Web Application (DVWA) in my local pentesting lab.
+- While learning web application pentesting in THM I wanted to practice more on the real world websites without breaking them than I got the need for a dedicated webpage for pentesting other than THM and came across DVWA.
 - DVWA is a purposely insecure web application created by the community at DVWA on [GitHub](https://github.com/digininja/DVWAhttps://github.com/digininja/DVWA).
 -  It is designed to help learners like me practice and understand real-world web vulnerabilities such as SQL Injection, Cross-Site Scripting (XSS), Command Injection, File Upload flaws, and many more.
 - The setup is simple to create, safe and in a controlled environment where I can experiment, break things, and learn how web attacks actually work, without risking any real systems.
@@ -60,6 +61,7 @@ sudo docker compose down --volumes
 - This repository only documents my local setup process for educational purposes only.
 
 ---
+
 
 
 
