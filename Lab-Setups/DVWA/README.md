@@ -54,7 +54,12 @@ sudo docker compose down --volumes
 ```
 ---
 
+⚠️ Note
+- This project uses the Damn Vulnerable Web Application (DVWA) created by [digininja](https://github.com/digininja/DVWA). 
+- All rights and licenses for DVWA belongs to its original authors.
+- This repository only documents my local setup process for educational purposes only.
 
+---
 
 
 
