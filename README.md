@@ -9,11 +9,9 @@ Currently learning and practicing **penetration testing** on TryHackMe.
 
 | Folder | Description |
 |--------|-------------|
-| **writeups/** | My sanitized writeups for TryHackMe, CTFs, and labs. Each includes recon, exploitation, privilege escalation, and lessons learned. |
-| **lab-setup/** | Configuration files and guides for setting up vulnerable labs, Docker environments, and local test networks. |
-| **scripts-tools/** | Custom scripts for reconnaissance, enumeration, and automation in ethical hacking. |
-| **reports/** | Example professional pentest reports and report templates. |
-| **learning-path/** | Documentation of my learning journey, certifications, and resources I’m following. |
+| **Writeups/** | My sanitized writeups for TryHackMe, CTFs, and labs. Each includes recon, exploitation, privilege escalation, and lessons learned. |
+| **Lab-Setups/** | Configuration files and guides for setting up vulnerable labs, Docker environments, and local test networks. |
+| **Reports/** | Example professional pentest reports and report templates. |
 
 ---
 
@@ -39,4 +37,4 @@ No real systems or data are targeted. The material here is **sanitized** and sha
 - **TryHackMe:** [https://tryhackme.com/p/Kaushik01]
 
 ---
-⭐ If you find this repository interesting, consider giving it a star — it helps me stay motivated!
+⭐ If you find this repository interesting, consider giving it a star it helps me stay motivated!
