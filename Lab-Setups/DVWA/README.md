@@ -21,6 +21,8 @@ Download and save the file in a seperate DVWA folder. The file contains all the 
 ```
 sudo docker compose up -d
 ```
+You should see this if the docker container is running perfectly.
+![](SC1.png)
 ## Check containers
 ```
 sudo docker compose ps 
@@ -44,4 +46,5 @@ sudo docker compose down --volumes
 ```
 
 ---
+
 
