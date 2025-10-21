@@ -9,23 +9,25 @@
 # Setup
 ## Installing Docker on Kali--  
 ```
-sudo apt update && sudo apt upgrade -y     <!-- Update to the latest packages -->
-sudo apt install -y docker.io docker-compose  <!-- To install the docker engine and docker compose on the main system -->
+sudo apt update && sudo apt upgrade -y         # Update to the latest packages 
+sudo apt install -y docker.io docker-compose   # To install the docker engine and docker compose on the main system
 ```
 ## Download the docker-compose.yml 
+Download and save the file in a seperate DVWA folder. It contains all the necesaary DVWA container configuration information.
 
-## Start the lab (use sudo)
+## Go to the DVWA folder via termianl
+
+## Start the lab 
 ```
 sudo docker compose up -d
 ```
 ## Check containers
 ```
-sudo docker compose ps
+sudo docker compose ps 
 ```
-## Follow logs if needed
-```
-sudo docker compose logs -f dvwa dvwa-db
-```
+
+You should see this if the installation is success
+
 ## Open DVWA in browser:
 - http://localhost:8081
 # Default login: admin / password
@@ -40,4 +42,5 @@ sudo docker compose down --volumes
 ```
 
 ---
+
 
