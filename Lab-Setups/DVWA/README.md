@@ -24,7 +24,7 @@ sudo docker compose up -d
 ```
 You should see this if the docker container is running perfectly.
 
-![](SC1.png)
+![](images/SC1.png)
 ## Check containers
 ```
 sudo docker ps 
@@ -61,6 +61,7 @@ sudo docker compose down --volumes
 - This repository only documents my local setup process for educational purposes only.
 
 ---
+
 
 
 
