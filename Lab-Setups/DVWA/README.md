@@ -36,7 +36,7 @@ You should see all the running containers.
 - http://localhost:8081
  ### Default login: 
  - Username - admin
- - Password -password
+ - Password - password
   
 ![](S3.png)
 
@@ -53,6 +53,7 @@ sudo docker compose down
 sudo docker compose down --volumes
 ```
 ---
+
 
 
 
