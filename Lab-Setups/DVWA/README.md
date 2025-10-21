@@ -25,13 +25,14 @@ sudo docker compose up -d
 ```
 sudo docker compose ps 
 ```
-
 You should see this if the installation is success
-[!Screenshot](https://github.com/Chief-Ethical-Programmer/Cybersecurity-Portfolio/blob/main/Lab-Setups/DVWA/SC.png)
+![Screenshot](SC.png)
 
 ## Open DVWA in browser:
 - http://localhost:8081
-# Default login: admin / password
+# Default login: 
+- admin - admin
+- password -password
 
 # To stop the lab
 ```
@@ -43,7 +44,4 @@ sudo docker compose down --volumes
 ```
 
 ---
-
-
-
 
