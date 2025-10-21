@@ -7,7 +7,7 @@
 
 ---
 # Setup
-## Installing Docker on Kali--  
+## Installing Docker on Kali
 ```
 sudo apt update && sudo apt upgrade -y         # Update to the latest packages 
 sudo apt install -y docker.io docker-compose   # To install the docker engine and docker compose on the main system
@@ -48,6 +48,7 @@ sudo docker compose down --volumes
 ```
 
 ---
+
 
 
 
