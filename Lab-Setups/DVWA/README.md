@@ -13,7 +13,7 @@ sudo apt update && sudo apt upgrade -y         # Update to the latest packages
 sudo apt install -y docker.io docker-compose   # To install the docker engine and docker compose on the main system
 ```
 ## Download the docker-compose.yml 
-Download and save the file in a seperate DVWA folder. It contains all the necesaary DVWA container configuration information.
+Download and save the file in a seperate DVWA folder. The file contains all the necesaary DVWA container configuration information.
 
 ## Go to the DVWA folder via termianl
 
@@ -43,6 +43,7 @@ sudo docker compose down --volumes
 ```
 
 ---
+
 
 
 
