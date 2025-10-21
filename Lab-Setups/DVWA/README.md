@@ -28,7 +28,7 @@ You should see this if the docker container is running perfectly.
 ```
 sudo docker ps 
 ```
-You should see this if the installation is success
+You should see all the running containers.
 
 ![Screenshot](SC.png)
 
@@ -48,6 +48,7 @@ sudo docker compose down --volumes
 ```
 
 ---
+
 
 
 
