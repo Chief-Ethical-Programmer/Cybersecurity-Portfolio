@@ -35,8 +35,8 @@ You should see all the running containers.
 ## Open DVWA in browser:
 - http://localhost:8081
 # Default login: 
-- admin - admin
-- password -password
+- Username - admin
+- Password -password
 
 # To stop the lab
 ```
@@ -48,6 +48,7 @@ sudo docker compose down --volumes
 ```
 
 ---
+
 
 
 
