@@ -16,19 +16,19 @@ def main():
     print(f"[+] Connecting to {target_host} on port {target_port}.....")
 
     try:
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s: #Creatiing an object where AF_INET means IPv4, SOCK_STREAM means TCP
-             s.settimeout(5) # 5s wait time than retry
-             s.connect((target_host, target_port))
-             print("[+] Connection Established")
-             request = f"GET / HTTP/1.1\r\nHost: {target_host}\r\n\r\n"
-             s.send(request.encode())
-             response=b""
-             while True:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s: # Creating an object where AF_INET means IPv4, SOCK_STREAM means TCP
+            s.settimeout(5) # 5s wait time then retry
+            s.connect((target_host, target_port))
+            print("[+] Connection Established")
+            request = f"GET / HTTP/1.1\r\nHost: {target_host}\r\nConnection: close\r\n\r\n"
+            s.sendall(request.encode())
+            response = b""
+            while True:
                 data = s.recv(4096)
-                if not data: #empty values as false hences breaks the loop
+                if not data: # empty values as false hence breaks the loop
                     break
-                response+=data
-             print(response.decode("utf-8"))
+                response += data
+            print(response.decode("utf-8"))
     except Exception as e:
         print(f"[-] Connection Failed: {e}")
         sys.exit(1)
