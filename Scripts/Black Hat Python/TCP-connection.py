@@ -17,7 +17,7 @@ def main():
 
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s: # Creating an object where AF_INET means IPv4, SOCK_STREAM means TCP
-            s.settimeout(5) # 5s wait time then retry
+            s.settimeout(5) # 5s wait time then it will throw an exception
             s.connect((target_host, target_port))
             print("[+] Connection Established")
             request = f"GET / HTTP/1.1\r\nHost: {target_host}\r\nConnection: close\r\n\r\n"
