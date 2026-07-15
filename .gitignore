@@ -46,42 +46,10 @@ backup/
 *.sublime-project
 *.sublime-workspace
 
-# ---- Binaries / Compiled ----
-*.exe
-*.dll
-*.so
-*.o
-*.out
-*.class
-*.jar
-*.bin
-*.db
-*.sqlite
-*.sqlite3
-
-# ---- Archives ----
-*.zip
-*.tar
-*.tar.gz
-*.rar
-*.7z
-
 # ---- Docs / Reports ----
-# Keep only sanitized versions manually
-*.pdf
-*.docx
 *.pptx
 *.xls
 *.xlsx
-
-# ---- Images / Media ----
-# You can remove this section if you want to commit screenshots
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.mp4
-*.mov
 
 # ---- Credentials / Keys ----
 *.env
