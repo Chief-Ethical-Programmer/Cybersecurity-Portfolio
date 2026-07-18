@@ -1,8 +1,8 @@
 # Isolated CyberLab
 
-A dual-perspective (red team + blue team) security operations homelab combining on premises virtualized infrastructure with a cloud-hosted virtual private server. Built for hands-on SOC analysis and offensive security practice, with an emphasis on realistic network segmentation and detection engineering.
+## Introduction
 
-##
+A dual-perspective (red team + blue team) security operations homelab combining on premises virtualized infrastructure with a cloud-hosted virtual private server. Built for hands-on SOC analysis and offensive security practice, with an emphasis on realistic network segmentation and detection engineering.
 
 ---
 
@@ -11,6 +11,12 @@ A dual-perspective (red team + blue team) security operations homelab combining 
 The architecture is designed to simulate a real-world SOC environment, supporting both defensive analysis and offensive practice.
 
 ![Architecture](../src/architecture.png)
+
+### Pipeline
+
+Traffic hits bait on two fronts, AWS EC2 (Cowrie + OpenCanary, catching real internet scanning) and an on-prem DMZ target (self-directed red-team exercises from Parrot). Both are walled off pfSense enforces that a compromised DMZ or cloud host can't reach the trusted LAN VMs in the internal network.
+
+Logs from the honeypots, Suricata (network IDS), DMZ VMs all flow into Wazuh, EC2's data travels over an encrypted WireGuard tunnel, gets auto-parsed as JSON, and is matched against custom hand-written detection rules (built by triggering real events). Suricata's alerts arrive via pfSense syslog and get unwrapped by a custom decoder before hitting Wazuh's built-in ruleset, which adds automatic MITRE ATT&CK mapping.
 
 ---
 
@@ -22,7 +28,7 @@ The architecture is designed to simulate a real-world SOC environment, supportin
 - **AWS EC2 (VPS)** - Cloud-hosted instance running honeypots (Cowrie, OpenCanary) and a Wazuh agent, connected back to the home lab via WireGuard.
 - **Wazuh (SIEM)** - Manager, indexer, and dashboard hosted on-prem (Parrot OS), serving as the central hub for alerts and activity from both DMZ and cloud honeypots.
 - **WireGuard (VPN)** - Encrypted tunnel connecting the EC2 instance to the home lab, used to transfer Wazuh agent logs securely.
-- **Honeypots** - Cowrie, OpenCanary T-Pot
+- **Honeypots** - Cowrie and OpenCanary.
 
 ---
 
@@ -663,8 +669,10 @@ sudo systemctl restart wazuh-manager
 ```
 
 Finally the setup is wazuh setup is over, below are the wazuh alerts:
+
 ![alt](../src/whimg4.png)
 
 ![alt](../src/whimg5.png)
 
 ---
+
