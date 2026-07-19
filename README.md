@@ -1,11 +1,11 @@
-# 🛡️ Cybersecurity Portfolio
+# Cybersecurity Portfolio
 
 Welcome to my **Cybersecurity Portfolio Repository** — a collection of my hands-on learning, labs, writeups, and tools as I explore ethical hacking, network security, and digital defense.  
 Currently learning and practicing **penetration testing** on TryHackMe.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 | Folder | Description |
 |--------|-------------|
@@ -15,7 +15,7 @@ Currently learning and practicing **penetration testing** on TryHackMe.
 
 ---
 
-## 🚀 Current Focus
+## Current Focus
 
 - Practicing penetration testing on **TryHackMe**
 - Building automated tools for recon & reporting
@@ -24,17 +24,17 @@ Currently learning and practicing **penetration testing** on TryHackMe.
 
 ---
 
-## ⚖️ Disclaimer
+## Disclaimer
 
 All content in this repository is for **educational and ethical purposes only**.  
 No real systems or data are targeted. The material here is **sanitized** and shared responsibly.
 
 ---
 
-### 🔗 Connect with Me
+### Connect with Me
 - **LinkedIn:** [https://www.linkedin.com/in/kaushikbarman01/]
 - **Medium / Blog:** [https://medium.com/@chiefthinker]
 - **TryHackMe:** [https://tryhackme.com/p/Kaushik01]
 
 ---
-⭐ If you find this repository interesting, consider giving it a star it helps me stay motivated!
+If you find this repository interesting, consider giving it a star it helps me stay motivated!
