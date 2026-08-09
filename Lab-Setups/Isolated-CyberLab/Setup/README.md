@@ -1,5 +1,6 @@
 # Isolated CyberLab
 
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -45,10 +46,12 @@
   - [Configuring Log Ingestion](#3-configuring-log-ingestion)
   - [Rules for Cowrie and OpenCanary](#4-rules-for-cowrie-and-opencanary)
   - [Suricata Log Ingestion on Wazuh](#5-suricate-log-ingestion-on-wazuh)
+- [Outcomes](#Outcomes)
+  
 
 ## Introduction
 
-A dual-perspective (red team + blue team) security operations homelab combining on premises virtualized infrastructure with a cloud-hosted virtual private server. Built for hands-on SOC analysis and offensive security practice, with an emphasis on realistic network segmentation and detection engineering.
+The lab combines a segmented on-premises virtual network with an internet-facing cloud honeypot environment. This setup allows controlled attacks to be performed and monitored locally while also collecting real-world attack telemetry from systems exposed to the internet. Security events from both environments are brought together in a centralized Wazuh SIEM, providing a single place to investigate alerts, analyze attacker activity, and understand how different security controls work together.
 
 ---
 
@@ -60,9 +63,9 @@ The architecture is designed to simulate a real-world SOC environment, supportin
 
 ### Pipeline
 
-Traffic hits bait on two fronts, AWS EC2 (Cowrie + OpenCanary, catching real internet scanning) and an on-prem DMZ target (self-directed red-team exercises from Parrot). Both are walled off pfSense enforces that a compromised DMZ or cloud host can't reach the trusted LAN VMs in the internal network.
+In the on-premises environment, pfSense segments the network into LAN and DMZ zones, with Suricata providing IDS monitoring on the DMZ interface. Internal network VM hosts the Wazuh manager, while an Ubuntu/Victim machine in the DMZ serves as a dedicated target for offensive security testing and time to time internet exposure. Attacks performed against the target are monitored, logged, and analyzed through the SIEM.
 
-Logs from the honeypots, Suricata (network IDS), DMZ VMs all flow into Wazuh, EC2's data travels over an encrypted WireGuard tunnel, gets auto-parsed as JSON, and is matched against custom hand-written detection rules (built by triggering real events). Suricata's alerts arrive via pfSense syslog and get unwrapped by a custom decoder before hitting Wazuh's built-in ruleset, which adds automatic MITRE ATT&CK mapping.
+In the cloud environment, Cowrie and OpenCanary are deployed on AWS EC2 and exposed to the internet to capture real-world malicious activity, including network scans, brute-force attempts, and attacker commands. A WireGuard tunnel securely transports logs from the cloud environment back to the on-premises Wazuh manager for centralized analysis.
 
 ---
 
@@ -722,3 +725,8 @@ Finally the setup is wazuh setup is over, below are the wazuh alerts:
 
 ---
 
+# Outcomes
+
+The goal of Isolated-CyberLab is to create an evolving environment where offensive techniques can be tested safely, defensive monitoring and detection skills can be practiced, and real-world attack data can be studied providing hands-on experience from both attacker and defender perspectives.
+
+---
