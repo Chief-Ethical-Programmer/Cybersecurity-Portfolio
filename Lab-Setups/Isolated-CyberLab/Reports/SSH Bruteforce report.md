@@ -1,6 +1,6 @@
 # SSH Bruteforce attack
 
-![alt](../src/ssh1.png)
+![alt](../src/ssh.png)
 # Alert Triage 
 
 ### Severity level - High
