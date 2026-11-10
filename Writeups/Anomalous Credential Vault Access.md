@@ -7,7 +7,7 @@
 
 ## Time of activity: 
 
-8:09:16:829
+8:09:16:829 IST
 
 ## List of Affected Entities:
 
@@ -16,7 +16,7 @@ User: "TRYHATME\\m.smith"
 
 ## Reason for Classifying as True Positive:
 
-This activity is classified as a True Positive due to the detection of execution of VaultCmd.exe "/listcreds:Windows Credentials" from THM-MSMITH.tryhatmestudios.thm via commandline at 8:09:16:829. It was launched by the execution of a hidden ParentcommandLine process running svchost_update.ps1, via powershell.
+This activity is classified as a True Positive due to the detection of execution of VaultCmd.exe "/listcreds:Windows Credentials" from THM-MSMITH.tryhatmestudios.thm via commandline at 8:09:16:829 IST. It was launched by the execution of a hidden ParentcommandLine process running svchost_update.ps1, via powershell.
 
 ## Reason for Escalating the Alert:
 
