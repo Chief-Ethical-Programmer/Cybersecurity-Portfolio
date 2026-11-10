@@ -1,6 +1,6 @@
 # Exfiltration
 
-![alt](img/Exfiltration.png)
+![alt](../img/Exfiltration.png)
 
 ***This is a writeup for a SOC simulation scenario from the TryHackMe "It's Downtime! 2026" event.***
 

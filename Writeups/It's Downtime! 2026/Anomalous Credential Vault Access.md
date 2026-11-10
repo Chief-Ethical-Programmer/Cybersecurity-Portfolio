@@ -1,6 +1,6 @@
 # Anomalous Credential Vault Access
 
-![alt](img/Anomalous_Credential_Vault_ccess.png)
+![alt](../img/Anomalous_Credential_Vault_ccess.png)
 
 
 ***This is a writeup for a SOC simulation scenario from the TryHackMe "It's Downtime! 2026" event.***
